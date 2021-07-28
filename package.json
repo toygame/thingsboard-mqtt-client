@@ -1,0 +1,22 @@
+{
+    "name": "thingsboard-mqtt-client",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/toygame/thingsboard-mqtt-client.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/toygame/thingsboard-mqtt-client/issues"
+    },
+    "homepage": "https://github.com/toygame/thingsboard-mqtt-client#readme",
+    "description": "",
+    "dependencies": {
+        "mqtt": "^4.2.8"
+    }
+}
