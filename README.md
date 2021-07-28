@@ -12,7 +12,7 @@
   </a>
 </p>
 
-> Thingsboard client using MQTT protocol and connect into Local server
+> Thingsboard client using MQTT protocol and connect into Local server base on ```Nodejs``` v14.0++.
 
 ### 🏠 [Homepage](https://github.com/toygame/thingsboard-mqtt-client#readme)
 
@@ -32,8 +32,8 @@ npm run start
 
 👤 **Thanapon Tapala**
 
-* Website: https://thanapon.info/
-* Github: [@toygame](https://github.com/toygame)
+- Website: https://thanapon.info/
+- Github: [@toygame](https://github.com/toygame)
 
 ## 🤝 Contributing
 
@@ -48,5 +48,6 @@ Give a ⭐️ if this project helped you!
 Copyright © 2021 [Thanapon Tapala](https://github.com/toygame).<br />
 This project is [ISC](https://github.com/toygame/thingsboard-mqtt-client/blob/master/LICENSE) licensed.
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
