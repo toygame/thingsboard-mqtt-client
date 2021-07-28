@@ -1,6 +1,6 @@
 const mqtt = require('mqtt')
-const client = mqtt.connect('mqtt://thingsboard.cloud', {
-  username: 'Insert your token here!!!',
+const client = mqtt.connect('mqtt://localhost', {
+  username: 'T1_TEST_TOKEN',
 })
 
 client.on('connect', function () {
