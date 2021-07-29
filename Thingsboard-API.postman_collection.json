@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "6a800099-3ec1-48ce-a173-8dd5a7ee6cb5",
+		"name": "Thingsboard-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"tenant@thingsboard.org\", \n    \"password\":\"tenant\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RPC Oneway",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZW5hbnRAdGhpbmdzYm9hcmQub3JnIiwic2NvcGVzIjpbIlRFTkFOVF9BRE1JTiJdLCJ1c2VySWQiOiI1MTUzNTk3MC1lZjZlLTExZWItYjA1NS01NTI0MjhhZGEzMzIiLCJlbmFibGVkIjp0cnVlLCJpc1B1YmxpYyI6ZmFsc2UsInRlbmFudElkIjoiNTA4MTNjNjAtZWY2ZS0xMWViLWIwNTUtNTUyNDI4YWRhMzMyIiwiY3VzdG9tZXJJZCI6IjEzODE0MDAwLTFkZDItMTFiMi04MDgwLTgwODA4MDgwODA4MCIsImlzcyI6InRoaW5nc2JvYXJkLmlvIiwiaWF0IjoxNjI3NTMxNTA1LCJleHAiOjE2Mjc1NDA1MDV9.pOqgZPMYEmAluEjSDh8flNG6t0Qdf0j6sY-JNEABw3yj2gXRcq0XlN-wi_vTbthr7dO5YVZV1dRWGTIQWaaQfw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"method\": \"setGpio\",\n  \"params\": {\n    \"pin\": \"11\",\n    \"value\": 0\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/plugins/rpc/oneway/522d3eb0-ef6e-11eb-b055-552428ada332",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"plugins",
+						"rpc",
+						"oneway",
+						"522d3eb0-ef6e-11eb-b055-552428ada332"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RPC Twoway",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZW5hbnRAdGhpbmdzYm9hcmQub3JnIiwic2NvcGVzIjpbIlRFTkFOVF9BRE1JTiJdLCJ1c2VySWQiOiI1MTUzNTk3MC1lZjZlLTExZWItYjA1NS01NTI0MjhhZGEzMzIiLCJlbmFibGVkIjp0cnVlLCJpc1B1YmxpYyI6ZmFsc2UsInRlbmFudElkIjoiNTA4MTNjNjAtZWY2ZS0xMWViLWIwNTUtNTUyNDI4YWRhMzMyIiwiY3VzdG9tZXJJZCI6IjEzODE0MDAwLTFkZDItMTFiMi04MDgwLTgwODA4MDgwODA4MCIsImlzcyI6InRoaW5nc2JvYXJkLmlvIiwiaWF0IjoxNjI3NTMxNTA1LCJleHAiOjE2Mjc1NDA1MDV9.pOqgZPMYEmAluEjSDh8flNG6t0Qdf0j6sY-JNEABw3yj2gXRcq0XlN-wi_vTbthr7dO5YVZV1dRWGTIQWaaQfw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"method\": \"setGpio\",\n  \"params\": {\n    \"pin\": \"11\",\n    \"value\": 0\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/plugins/rpc/oneway/522d3eb0-ef6e-11eb-b055-552428ada332",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"plugins",
+						"rpc",
+						"oneway",
+						"522d3eb0-ef6e-11eb-b055-552428ada332"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
