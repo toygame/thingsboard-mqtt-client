@@ -12,7 +12,7 @@
   </a>
 </p>
 
-> Thingsboard client using MQTT protocol and connect into Local server base on ```Nodejs``` v14.0++.
+> Thingsboard client using MQTT protocol and connect into Local server base on ```Nodejs``` v.14.0++.
 
 ### 🏠 [Homepage](https://github.com/toygame/thingsboard-mqtt-client#readme)
 
@@ -22,10 +22,18 @@
 npm install
 ```
 
+
+## Deploy with Docker-compose
+
+```sh
+docker-compose up -d
+```
+
+When service started, open ```http://localhost:9090```  
 ## Usage
 
 ```sh
-npm run start
+npm start
 ```
 
 ## Author
